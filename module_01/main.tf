@@ -3,7 +3,7 @@ variable "trigger" {
   default     = "one"
 }
 
-resource "null_resource" "resource" {
+resource "null_resource" "resource_01" {
   triggers = {
     number = "${var.trigger}"
   }
