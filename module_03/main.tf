@@ -6,6 +6,8 @@ variable "trigger" {
 resource "null_resource" "resource_03" {
   triggers = {
     number = "${var.trigger}"
+
+  tag = "demo"
   }
 }
 
